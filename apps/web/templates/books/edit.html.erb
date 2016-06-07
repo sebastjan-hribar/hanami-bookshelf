@@ -1,0 +1,19 @@
+<h2>Add book</h2>
+
+<%=
+  form_for :book, routes.book_path(book.id), method: :patch do
+    div class: 'input' do
+      label      :title
+      text_field :title
+    end
+
+    div class: 'input' do
+      label      :author
+      select :author, authors
+    end
+
+    div class: 'controls' do
+      submit 'Update Book'
+    end
+  end
+%>
