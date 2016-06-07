@@ -5,7 +5,7 @@ module Web::Controllers::Books
     expose :authors
 
     def call(params)
-      @authors = {1 => "Best Author", 2 => "Second Best Author"}
+      @authors = {"1": "Best Author", "2": "Second Best Author"}
     end
   end
 end
